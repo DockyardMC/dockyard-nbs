@@ -25,7 +25,7 @@ data class NBSFile(
 
     companion object {
         fun fromFile(file: File): NBSFile {
-            return NBSReader.parse(file)
+            return NBSReader.read(file)
         }
     }
 
