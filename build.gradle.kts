@@ -13,9 +13,10 @@ repositories {
 }
 
 dependencies {
-    implementation("io.github.dockyardmc:dockyard:0.6-SNAPSHOT")
+    implementation("io.github.dockyardmc:dockyard:0.5.3-SNAPSHOT")
     implementation("io.github.dockyardmc:scroll:1.8")
     implementation("cz.lukynka:kotlin-bindables:1.1")
+    implementation("cz.lukynka:pretty-log:1.4")
     implementation("io.ktor:ktor-server-netty:2.3.10")
     implementation("io.ktor:ktor-network:2.3.10")
     testImplementation(kotlin("test"))

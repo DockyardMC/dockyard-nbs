@@ -1,6 +1,7 @@
 package io.github.dockyardmc.nbs
 
 import io.netty.buffer.ByteBuf
+import java.lang.IllegalStateException
 import java.nio.charset.Charset
 
 fun ByteBuf.readNbsString(): String {
@@ -21,4 +22,9 @@ fun ByteBuf.readNbsShort(): Int {
     }
 
     return sum
+}
+
+fun Map<Int, List<Note>>.getFirst(): Pair<Int, List<Note>> {
+    this.forEach { return it.toPair() }
+    throw IllegalStateException("map empty")
 }

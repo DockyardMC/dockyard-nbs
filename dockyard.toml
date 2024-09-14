@@ -1,0 +1,22 @@
+configVersion = 4
+
+[serverConfig]
+    ip = "0.0.0.0"
+    port = 25565
+    networkCompressionThreshold = 256
+    cacheSchematics = true
+    debug = false
+    maxPlayers = 50
+    defaultEntityRenderDistanceBlocks = 64
+
+[chunkEngine]
+    async = true
+
+[implementationConfig]
+    applyBlockPlacementRules = true
+    notifyUserOfExceptionDuringCommand = true
+    commandErrorPrefix = "<dark_red>Error <dark_gray>| <red>"
+    commandNoPermissionsMessage = "You do not have permissions to execute this command!"
+
+[defaultImplementations]
+    dockyardCommands = true
